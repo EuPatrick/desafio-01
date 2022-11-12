@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="javascript.js">
+</head>
+<body>
+    <!-- // Nesse desafio, você irá solicitar ao usuário que ele insira **dois números** e, a partir daí, calcular:
+
+// - [ ]  A soma dos dois números;
+// - [ ]  A subtração dos dois números;
+// - [ ]  A multiplicação dos dois números;
+// - [ ]  A divisão dos dois números;
+// - [ ]  O resto da divisão dos dois números;
+// - [ ]  Verifique se a soma dos dois números é par ~~(ou ímpar)~~;
+// - [ ]  Verifique se os dois números inseridos são iguais
+
+// let firstNumber = prompt("Digite o primeiro numero: ");
+// let secondNumber = prompt("Digite o segundo numero: ");
+// let result; -->
+
+<script> 
+    let firstNumber = prompt("Digite o primeiro numero: ");
+    let secondNumber = prompt("Digite o segundo numero: ");
+    let result;
+
+    firstNumber = Number(firstNumber);
+    secondNumber = Number(secondNumber);
+    
+    const sum = firstNumber + secondNumber;
+    const sub = firstNumber - secondNumber;
+    const div = firstNumber / secondNumber;
+    const mult = firstNumber * secondNumber;
+    const resDiv = firstNumber % secondNumber;
+    
+    alert(` A soma dos dois numero é: ${sum}`);
+    alert(` A subtração dos dois numero é:  ${sub}`);
+    alert(` A divisão dos dois numero é:  ${div}`);
+    alert(` A multiplicação dos dois numero é: ${mult}`);
+    alert(` O resto da divisão dos dois numero é:  ${resDiv}`);
+    
+    result = sum;
+    
+    if(result % 2 == 0) {
+    alert(` O numero ${sum} é Par`)
+    } else {
+        alert(`O numero ${sum} é impa`)
+    };
+    
+    function consulta() {
+        if (firstNumber === secondNumber) {
+        alert(` Os Numero inseridos são iguais `)
+    } else {
+        alert(`Os numeros inseridos sao diferentes`)
+    };
+     
+    };
+    consulta()
+     </script>
+
+</body>
+</html>
